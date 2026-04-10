@@ -27,93 +27,105 @@
 
 const CONFIG = {
   // ── Recipient Info ────────────────────────────────────────────
-  name: "Irene",
-  photo: "./img/irene.jpg",       // Place your photo in the img/ folder
-  music: "./music/hbd.mpeg",      // Place your music in the music/ folder
+  name: "Sharon",
+  photo: "./img/best.jpg",
+  music: "./music/Happy_birthday_to_you_MIDI(chosic.com).mp3",
 
   // ── Theme Colors ──────────────────────────────────────────────
-  // A toggle button lets the viewer switch between dark & light mode.
   colors: {
-    primary: "#f472b6",           // Main accent color (rose pink)
-    accent: "#60a5fa",            // Secondary accent color (sky blue)
+    primary: "#c084fc",
+    accent: "#e879f9",
     dark: {
-      background: "#0f172a",      // Slate 900
-      text: "#f1f5f9",            // Slate 100
+      background: "#1a0a2e",
+      text: "#f1f5f9",
     },
     light: {
-      background: "#fafaf9",      // Stone 50
-      text: "#1e293b",            // Slate 800
+      background: "#faf5ff",
+      text: "#1e293b",
     },
   },
 
   // ── Default Color Mode ────────────────────────────────────────
-  // Options: "dark" or "light"
   defaultMode: "dark",
 
   // ── Sections ──────────────────────────────────────────────────
-  // Add, remove, duplicate, or reorder as you wish!
   sections: [
     {
       type: "greeting",
-      title: "Hi",
-      subtitle: "I really like your name btw!",
+      title: "Heeeyyy...",
+      subtitle: "Unajua ni siku yako eeh😂😎!",
     },
     {
       type: "countdown",
-      from: 3,                    // Countdown from this number
-      goText: "🎉",              // Text shown after countdown ends
+      from: 3,
+      goText: "🎉",
     },
     {
       type: "announcement",
-      text: "It's your birthday!! :D",
+      text: "It's your birthday!",
     },
     {
+      // Warm, personal birthday message drawing on what makes Sharon special
       type: "chatbox",
       message:
-        "Happy birthday to youu!! Wishing you a wonderful year ahead filled with joy, love, and endless happiness!",
+        "Happy birthday, Sharon! You're a rare person, making the world feel a little calmer, a little warmer and a whole lot more interesting. Here's to you and an incredible year ahead! 🎂",
       buttonText: "Send",
     },
     {
+      // Personal tribute — reveals line by line, building to the heart of it
       type: "ideas",
       lines: [
-        "That's what I was going to do.",
-        "But then I stopped.",
-        "I realised, I wanted to do something <strong>special</strong>.",
-        "Because,",
-        "You are Special <span>:)</span>",
+        "If I had to describe you,",
+        "This simple webpage wouldn't be enough .",
+        "You're caring. Calm. A great listener.",
+        "Your stories? <strong>Absolutely amazing.</strong>",
+        "You call yourself a jack of all trades and a master of none —",
+        "but honestly?",
+        "I see someone who is <strong>the best</strong> at everything she does.",
+        "Not because you're perfect.",
+        "But because you give everything <em>everything you've got.</em>",
+        "And that's a rare thing. <span>✨</span>",
       ],
-      bigLetters: "SO",
-    },
-    {
-      type: "quote",
-      text: "The more you praise and celebrate your life, the more there is in life to celebrate.",
-      author: "Oprah Winfrey",
+      bigLetters: "YOU",
     },
     {
       type: "stars",
       count: 40,
     },
     {
+      // Numbers 6:24-26 — the priestly blessing over Sharon's new year
+      type: "quote",
+      text: "The LORD bless thee and keep thee; The LORD make his face shine upon thee and be gracious unto thee; The LORD lift up his countenance upon thee, and give you peace.",
+      author: "Numbers 6:24–26",
+    },
+    {
       type: "balloons",
-      count: 25,
+      count: 30,
     },
     {
       type: "profile",
-      wishTitle: "Happy Birthday!",
-      wishText: "May the js.prototypes always be with you! ;)",
+      wishTitle: "Happy Birthday, Sharon!",
+      wishText: "May this year bring you all the joy, love, peace and the best that life has to offer. <br> May the Lord grant you all the desires of your heart!",
     },
     {
       type: "fireworks",
-      count: 24,
+      count: 30,
+    },
+    {
+      // A warm, celebratory quote to close out the celebration
+      type: "quote",
+      text: "The more you praise and celebrate your life, the more there is in life to celebrate.",
+      author: "Oprah Winfrey",
     },
     {
       type: "confetti",
       count: 9,
     },
     {
+      // Closing in Swahili — personal, warm, and a little playful
       type: "closing",
-      text: "Okay, now come back and tell me if you liked it.",
-      replayText: "Or click, if you want to watch it again.",
+      text: "... <br> Wishing you an incredible year🥳✨."
+      
     },
   ],
 };
