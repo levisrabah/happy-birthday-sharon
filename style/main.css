@@ -63,17 +63,15 @@ body {
     color      var(--transition-theme);
 }
 
-/* Subtle animated gradient mesh on the background */
+/* Subtle animated gradient mesh on the background - REMOVED */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background:
-    radial-gradient(ellipse 70% 50% at 15% 20%,  rgba(192, 132, 252, 0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 60% at 85% 80%,  rgba(232, 121, 249, 0.10) 0%, transparent 60%);
-  animation: meshDrift 12s ease-in-out infinite alternate;
+  background: none;
+  animation: none;
 }
 
 @keyframes meshDrift {
@@ -481,28 +479,11 @@ body::before {
   display: inline-block;
 }
 
-/* Animated lilac glow ring around the photo */
-.profile-wrapper::before {
-  content: '';
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), var(--accent), var(--primary));
-  background-size: 200% 200%;
-  animation: ringRotate 3s linear infinite;
-  z-index: -1;
-  opacity: 0.75;
-}
-
-@keyframes ringRotate {
-  0%   { background-position: 0%   50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0%   50%; }
-}
+/* Animated lilac glow ring around the photo - REMOVED */
 
 .profile-picture {
-  width: clamp(150px, 36vw, 290px);
-  height: clamp(150px, 36vw, 290px);
+  width: clamp(200px, 45vw, 380px);
+  height: clamp(200px, 45vw, 380px);
   object-fit: cover;
   border-radius: 50%;
   display: block;
@@ -606,9 +587,7 @@ body::before {
    Applied by JS toggling [data-theme="light"] on <body>
    ═══════════════════════════════════════════════════════════════ */
 [data-theme="light"] body::before {
-  background:
-    radial-gradient(ellipse 70% 50% at 15% 20%,  rgba(192, 132, 252, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 60% at 85% 80%,  rgba(232, 121, 249, 0.07) 0%, transparent 60%);
+  background: none;
 }
 
 [data-theme="light"] .text-box,
@@ -622,9 +601,6 @@ body::before {
   background: rgba(192, 132, 252, 0.12);
 }
 
-[data-theme="light"] .profile-wrapper::before {
-  opacity: 0.55;
-}
 
 /* ═══════════════════════════════════════════════════════════════
    RESPONSIVE
@@ -681,8 +657,8 @@ body::before {
   }
 
   .profile-picture {
-    width: clamp(100px, 25vw, 180px);
-    height: clamp(100px, 25vw, 180px);
+    width: clamp(140px, 32vw, 240px);
+    height: clamp(140px, 32vw, 240px);
   }
 
   .wish-hbd {
